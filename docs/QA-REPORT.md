@@ -90,6 +90,9 @@ Require a successful run for the repository's current head before delivery.
   [CI run](https://github.com/RasAbrish/spotter/actions/runs/44730189703) uses the actual
   `.github/workflows/ci.yml` workflow. The API supplies no further error message; the
   owner must inspect the run page before this can be marked green.
+- The workflow also passed actionlint 1.7.12 with no diagnostics. Its release archive
+  checksum was verified against the upstream GitHub release metadata. This validates
+  workflow syntax, not GitHub account eligibility or runner scheduling.
 - The documented production command, Gunicorn with two Uvicorn workers and production
   Django settings, passed local health, geocoding, winter-storm planning and 49-frame
   heatmap smoke checks with offline providers and a generated environment-only secret.
@@ -98,6 +101,10 @@ Require a successful run for the repository's current head before delivery.
   was verified separately. No cloud services have been provisioned or charged.
 - Render/Vercel connections and approval for the existing paid Render backend/Redis
   blueprint remain pending. The local Mapbox token is still absent.
+- Generated a local 1080p, approximately eight-minute narrated rehearsal outside the
+  repository at `../spotter-delivery/spotter-walkthrough-draft.mp4`, with a text transcript.
+  It explicitly discloses offline/demo providers and synthesized narration. It is **not**
+  the final live-provider walkthrough and has **not** been uploaded to Loom.
 
 ## Original delivery run
 
